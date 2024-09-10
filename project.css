@@ -14,12 +14,12 @@
     gap: 20px;
 }
 .nav-link active{
-    align-content: center;
+    margin-left: 0%;
 }
 .navbar-brand h2 {
      color: rgb(248, 248, 244);
     font: normal 36px 'Cookie', cursive;
-    margin: 0;
+    margin-left: 10%;
     }
     .navbar-brand h2{
         color: rgb(49, 49, 5);
@@ -206,12 +206,18 @@
         }
     }   
    /*page3  */
-   .card-group{
-    display: flex;
+.card-group{
+     display: flex;
     flex-direction: column;
-   }
+    gap: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
    .page3heading{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: serif;
+    margin-top: 5%;
+    margin-left: 5%;
 }
    @media only sreen and (width>600px) and (width<1200px){
     .card-group{
@@ -220,6 +226,7 @@
     }
     .page3heading{
         font-size: 3rem;
+      
     }
    }
 /* page3 cards*/
@@ -239,8 +246,9 @@
         display: grid;
         grid-template-columns: auto ;
         justify-content: center;
-        gap: 1%;
-        /* margin-top: 10%; */
+         gap: 1%; 
+         margin-top: 3%;
+    
     }
 
 }
@@ -249,6 +257,7 @@
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
+        gap: 5%;
         /* margin-top: 10%; */
     }
 
@@ -318,7 +327,7 @@
      height: auto;
     }
     .page4img2{
-     width:auto;
+     width:100%;
      height: auto;
      margin-top: -10%;
     }
@@ -380,8 +389,8 @@
     align-content: center;
  }
  .card5{
-    background-color:rgb(244, 242, 243);
-    width: 20rem;
+    background-color:rgb(251, 242, 246);
+    width: 22rem;
     height:auto;
     border-radius: 3%;
     margin-top: 5%; 
@@ -400,11 +409,12 @@
      .page5 {
          display: grid;
          grid-template-columns: auto auto;
+         justify-content: center;
          gap: 1em; 
          width:100%;
      }
      .card5{
-         width: 17rem;
+         width: 20rem;
          height: auto; 
          margin-top: 2%; 
          border-radius: 5%; 
@@ -420,6 +430,7 @@
          grid-template-columns: auto;
          gap: 1em; 
          width:100%;
+         justify-content: center;
      }
      .card5{
          width: 20rem;
@@ -444,15 +455,17 @@
      justify-content: space-around;
   } 
   .card6{
-     background-color:rgb(244, 242, 243);
-     width:20rem;
+     background-color:rgb(251, 242, 246);
+     width:22rem;
      height:auto;
      border-radius: 3%;
      margin-top: 5%; 
      height:60vh;
+     padding: 10%;
   }
  .heading{
      margin-top: 5%;
+     margin-left: 5%;
  }
  @media only screen and (width>600px) and (width<1000px){
      .heading{
@@ -462,10 +475,11 @@
          display: grid;
          grid-template-columns:  auto auto;
          gap: 1em; 
+         justify-content: center;
          width:100%;
      }
      .card6{
-         width: 17rem;
+         width: 20rem;
          height: auto; 
          margin-top: 2%; 
          border-radius: 5%; 
@@ -486,9 +500,10 @@
          grid-template-columns: auto;
          gap: 1em; 
          width:100%;
+         justify-content: center;
      }
      .card6{
-         width: 18rem;
+         width: 20rem;
          height: auto; 
          margin-top: 2%; 
          border-radius: 5%; 
@@ -540,7 +555,22 @@
         font-size: 2rem;
     }
 }
- 
+.page8{
+    display: grid;
+    grid-template-columns: auto auto auto auto;  
+}
+ @media only screen and (width<600px){
+    .page8{
+     display: grid;
+     grid-template-columns: auto;
+    }
+ }
+ @media only screen and (width>600px) and (width<1200px){
+    .page8{
+     display: grid;
+     grid-template-columns: auto;
+    }
+ }
  header {
      text-align: center;
      padding-top: 100px;
@@ -669,7 +699,6 @@
  .footer-distributed .footer-center p a {
      color: #0f0e0e;
      text-decoration: none;
-     ;
  }
  
  /* Footer Right */
@@ -722,8 +751,6 @@
  .sub{
      width:25vw;
      height:5vh;
-     /* align-items: center; */
-      /* margin-left: 0%;  */
    }
  
  @media (max-width: 1000px) {
