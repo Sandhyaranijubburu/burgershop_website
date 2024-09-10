@@ -558,6 +558,7 @@
 .page8{
     display: grid;
     grid-template-columns: auto auto auto auto;  
+    margin-top: 10%;
 }
  @media only screen and (width<600px){
     .page8{
