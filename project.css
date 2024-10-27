@@ -5,10 +5,10 @@
 }
 body{
     overflow-x: hidden;
-}
+} 
 .container-fluid{
     position: fixed;
-    top:0px;
+    top:-8px;
     z-index: 1000; 
 }
 .head{
@@ -18,10 +18,16 @@ body{
 .nav-link active{
     margin-left: 0%;
 }
+.navbar{
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
 .navbar-brand h2 {
      color: rgb(248, 248, 244);
     font: normal 36px 'Cookie', cursive;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     }
     .navbar-brand h2{
         color: rgb(49, 49, 5);
@@ -68,38 +74,45 @@ body{
      }
      .icon1{
         position: absolute;
-        margin-top: 10%;
-        margin-left: 29.5%;
+        margin-top: 11%;
+        margin-left: 30.5%;
     }
      .icon2{
-        margin-left: 29%;
-        margin-top: 11.5%;
+        margin-left: 30%;
+        margin-top: 12.5%;
         position: absolute;
      } 
    
     .icon3{
-        margin-left:31%;
-        margin-top: 12.5%;
+        margin-left:32%;
+        margin-top: 13.5%;
         position:absolute;
      }  
      .head1{
      font-family:serif ;
 
      }
+     .icons{
+        display: none;
+     }
+    
  @media only screen and (width<600px){
         .img1 {
-            height: 100%;
+            height: 40vh;
             width: auto;
         }
         .navbar {
-            flex-direction: column; 
-            gap: 1%; 
-            /* meargin-left:auto; */
+             flex-direction:column ;  
+             gap: 1%;   
+              width: auto;      
+        }
+        .container-fluid{
+            width: auto;
         }
         .text1,.text2 {
             font-size: 2rem;
             margin-left: 0; 
-            margin-top: 7%;
+            margin-top: 13.5%;
             text-align: center; 
         }
         .text3 {
@@ -112,30 +125,39 @@ body{
         }
         .button2 {
             width: 30vw; 
-            height: 5vh; 
+            height: 6vh; 
         }
         .head1{
             display: none;
             
         }
+        .icons{
+            display:block;
+         }
+        
     } 
-    @media only screen and (width>600px) and (width<1000px){
+    @media only screen and (width>=600px) and (width<1000px){
         .img1 {
-            height: auto;
+            /* height: auto; */
+            height: 50vh;
             width: auto;
         }
         .navbar {
-            flex-direction: column; 
-            gap: 1%; 
-        }
+            /* flex-direction:column ;  
+            gap: 1%;   */
+             width: auto;      
+       }
+       .container-fluid{
+           width: auto;
+       }
         .text1,.text2 {
             font-size: 3rem;
             margin-left: 0; 
-            margin-top: 3%;
+            margin-top: 10%;
             text-align: center; 
         }
         .text3 {
-            font-size: 3rem; 
+            font-size: 4rem; 
             margin-left: 5%; 
         } 
         .icon1,.icon2,.icon3{
@@ -143,12 +165,15 @@ body{
         }
         .button2 {
             width: 20vw; 
-            height: 5vh; 
+            height: 7vh; 
         }
         .head1{
             display: none;
             
         }
+        .icons{
+            display:block;
+         }
     } 
 .container {
     display: flex;
@@ -242,6 +267,7 @@ body{
 }
 .card{
     background-color:yellow;
+    /* box-shadow: 5px; */
 }
 
 @media only screen and (width<600px){
@@ -328,12 +354,13 @@ body{
     }
     .page4img1{
      width:100%;
+     margin-top: 4%;
      height: auto;
     }
     .page4img2{
      width:100%;
      height: auto;
-     margin-top: -10%;
+     margin-top: -5%;
     }
     .page4content2{
      width: auto; 
@@ -357,7 +384,7 @@ body{
   @media only screen and (width>600px) and (width<1000px){
      .page4{
       display: grid;
-      height: 500vh;
+      height: 360vh;
       width: auto;
       gap:2%;
       margin-top: 20%;
@@ -367,17 +394,18 @@ body{
      .page4img1{
          width:auto;
          height: 100%;
-         margin-top: 10%;
+          margin-top: 10%; 
         }
      .page4img2{
-      width:auto;
-      height: auto;
-      margin-top: -10%;
+      width:100%;
+      /* height: 100%; */
+      margin-top: -40%;
      }
      .page4content2{
-      width: 90%;
+      width: 70%;
       margin-left: 15%;
       font-size: 2rem;
+      margin-top: -40%;
      }
       .page4content{
           font-size: 2rem;
@@ -560,15 +588,22 @@ body{
         font-size: 2rem;
     }
 }
+/* page 8 */
 .page8{
     display: grid;
     grid-template-columns: auto auto auto;  
     margin-top: 10%;
 }
+.g1,.g2,.g3{
+    width: auto;
+}
  @media only screen and (width<600px){
     .page8{
      display: grid;
      grid-template-columns: auto;
+    }
+    .g1,.g2,.g3{
+        width: auto;
     }
  }
  
@@ -577,11 +612,17 @@ body{
      display: grid;
      grid-template-columns: auto;
     }
+    .g1,.g2,.g3{
+        width: auto;
+    }
  }
  @media only screen and (width>800px) and (width<1000px){
     .page8{
      display: grid;
      grid-template-columns: auto;
+    }
+    .g1,.g2,.g3{
+        width: auto;
     }
  }
  header {
@@ -800,7 +841,7 @@ body{
    .animate__animated.animate__fadeInLeft{
      --animation-duration: 2s;
    }
-   .overlay{
+   .icon3{
      animation-delay: 0.2s;
    }
    .icon1{
